@@ -2,6 +2,8 @@
 import { Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardFooter } from "./ui/card";
+import { Image } from "astro:assets";
+import profile_pic from "../assets/profile-pic.png";
 ---
 
 <div class="min-h-screen bg-background">
@@ -35,7 +37,8 @@ import { Card, CardContent, CardFooter } from "./ui/card";
         <div
           class="relative h-48 w-48 overflow-hidden rounded-full self-start mx-0"
         >
-          <img src="/src/assets/profile-pic.png" />
+          <!-- <img src="/src/assets/profile-pic.png" /> -->
+          <Image src={profile_pic} alt="" />
         </div>
         <div class="flex flex-col text-left">
           <h1 class="text-4xl font-bold tracking-tight md:text-5xl">
