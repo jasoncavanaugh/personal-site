@@ -1,0 +1,336 @@
+---
+import { Mail } from "lucide-react";
+import { Button } from "./ui/button";
+import { Card, CardContent, CardFooter } from "./ui/card";
+---
+
+<div class="min-h-screen bg-background">
+  <header
+    class="sticky top-0 z-10 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+  >
+    <nav class="flex items-center h-16 justify-end gap-6 px-6 md:px-16">
+      <a
+        href="#about"
+        class="text-sm font-medium hover:underline underline-offset-4"
+      >
+        About
+      </a>
+      <a
+        href="#resume"
+        class="text-sm font-medium hover:underline underline-offset-4"
+      >
+        Resume
+      </a>
+      <a
+        href="#projects"
+        class="text-sm font-medium hover:underline underline-offset-4"
+      >
+        Projects
+      </a>
+    </nav>
+  </header>
+  <main class="p-8 md:p-24">
+    <section id="hero" class="flex flex-col py-8 md:py-16">
+      <div class="flex flex-col md:flex-row md:items-start gap-8">
+        <div
+          class="relative h-48 w-48 overflow-hidden rounded-full self-start mx-0"
+        >
+          <img src="/src/assets/profile-pic.png" />
+        </div>
+        <div class="flex flex-col text-left">
+          <h1 class="text-4xl font-bold tracking-tight md:text-5xl">
+            Jason Cavanaugh
+          </h1>
+          <div class="mt-6 flex gap-4">
+            <Button
+              variant="outline"
+              size="icon"
+              className="hover:cursor-pointer"
+            >
+              <a
+                href="https://github.com/jasoncavanaugh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img class="w-6 h-6" src="/src/assets/github-mark.png" />
+                <span class="sr-only">GitHub</span>
+              </a>
+            </Button>
+
+            <a
+              href="https://linkedin.com/in/jasoncvngh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="outline"
+                size="icon"
+                className="hover:cursor-pointer w-10"
+              >
+                <img class="w-7 h-6" src="/src/assets/linkedin.png" />
+                <span class="sr-only">LinkedIn</span>
+              </Button>
+            </a>
+            <a href="mailto:jason.p.cavanaugh@gmail.com">
+              <Button
+                variant="outline"
+                className="hover:cursor-pointer"
+                size="icon"
+              >
+                <Mail className="h-5 w-5" />
+                <span class="sr-only">Email</span>
+              </Button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="">
+      <h2 class="mb-8 text-3xl font-bold tracking-tight">About</h2>
+      <!-- <p class="leading-7 [&:not(:first-child)]:mt-6">
+        I'm a passionate developer with multiple years of experience building
+        web applications. I specialize in creating responsive, user-friendly
+        interfaces using modern technologies like React, Next.js, and
+        TailwindCSS.
+      </p> -->
+      <p class="leading-7 [&:not(:first-child)]:mt-6">
+        My journey in tech began when I took the first introduction to Computer
+        Science class at university during my freshman year. At the time, I was
+        a studying physics and wasn't convinced I was in the right major. I
+        quickly fell in love with the problem-solving aspect of writing code.
+        Coding felt like playing a game, where winning meant creating something
+        useful that could actually solve problems for people. I was hooked and
+        quickly switched my major to Computer Science.
+      </p>
+      <p class="leading-7 [&:not(:first-child)]:mt-6">
+        Now, I'm a passionate developer who mostly does web development. At my
+        day job, I work on multiple fullstack applications that are used
+        internally by hundreds of users. In my time outside work, I enjoy
+        delving further into new technologies in the constantly-evolving web
+        ecosystem, oftentimes using that knowledge to build out applications
+        that solve specific problems I encounter in my own life.
+      </p>
+    </section>
+    <div class="h-16"></div>
+    <div class="border-b-none border-t w-full"></div>
+    <section id="resume" class="py-8 md:py-16">
+      <h2 class="mb-8 text-3xl font-bold tracking-tight">Resume</h2>
+      <div class="flex flex-col gap-6">
+        <div>
+          <h3 class="text-xl font-bold">Experience</h3>
+          <div class="mt-4 space-y-4">
+            <div>
+              <h4 class="text-lg font-semibold">JPMorganChase</h4>
+              <h5 class="font-medium text-gray-700">Software Engineer II</h5>
+              <p class="text-sm text-muted-foreground mb-2">
+                Feb 2023 - Present | New York, NY
+              </p>
+              <p class="mt-2">
+                Fullstack engineering on internal web applications used
+                firm-wide for managing mobile development workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Education</h3>
+          <div class="mt-4 space-y-4">
+            <div>
+              <h4 class="text-lg font-semibold">University of Maryland</h4>
+              <h5 class="font-medium text-gray-700">
+                B.S. in Computer Science
+              </h5>
+              <p class="text-sm text-muted-foreground">
+                Sept 2019 - Dec 2022 | College Park, MD
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Skills</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span
+              class="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
+              >TypeScript / JavaScript</span
+            >
+            <span
+              class="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
+              >React.js</span
+            >
+            <span
+              class="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
+              >Next.js</span
+            >
+            <span
+              class="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
+              >Tailwind CSS</span
+            >
+          </div>
+        </div>
+        <div class="flex justify-start">
+          <href download href="/src/assets/resume.pdf">
+            <Button className="hover:cursor-pointer">
+              Download Full Resume
+            </Button>
+          </href>
+        </div>
+      </div>
+    </section>
+    <div class="h-16"></div>
+    <div class="border-b-none border-t w-full"></div>
+    <section id="projects" class="py-8 md:py-16">
+      <h2 class="mb-8 text-3xl font-bold tracking-tight">Projects</h2>
+      <div class="flex flex-wrap gap-4 w-full">
+        <Card className="rounded-md shadow-md w-[28rem]">
+          <CardContent className="p-6">
+            <div class="relative h-40 w-full overflow-hidden rounded-md mb-4">
+              <img
+                src="/src/assets/basily-screenshot.png"
+                alt="Project 1"
+                class="object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Basily</h3>
+            <p class="text-sm text-muted-foreground mb-4">
+              An expense-tracking application. Meant to sit somewhere between
+              the minimalism of Excel sheets and budgeting apps like YNAB and
+              NerdWallet that do too much. Used daily by me.
+            </p>
+          </CardContent>
+          <CardFooter className="">
+            <div class="flex gap-2">
+              <Button variant="outline">
+                <a
+                  href="https://basily.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
+              </Button>
+              <Button variant="outline">
+                <a
+                  href="https://github.com/jasoncavanaugh/basily"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </Button>
+            </div>
+          </CardFooter>
+        </Card>
+        <Card className="rounded-md shadow-md w-[29rem]">
+          <CardContent className="p-6">
+            <div class="relative h-40 w-full overflow-hidden rounded-md mb-4">
+              <img
+                src="/src/assets/streakgraph-screenshot.png"
+                alt="Project 2"
+                class="object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Streakgraph</h3>
+            <p class="text-sm text-muted-foreground mb-4">
+              A habit-tracking application inspired by the GitHub contributions
+              graph. Meant to provide the user with a satisyfing visual cluster
+              of squares that grows with every day they complete their habit.
+              Used daily by me.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <div class="flex gap-2">
+              <Button variant="outline">
+                <a
+                  href="https://streakgraph.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
+              </Button>
+              <Button variant="outline">
+                <a
+                  href="https://github.com/jasoncavanaugh/streakgraph"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </Button>
+            </div>
+          </CardFooter>
+        </Card>
+        <Card className="rounded-md shadow-md w-[29rem]">
+          <CardContent className="p-6 pb-0">
+            <div class="relative h-40 w-full overflow-hidden rounded-md mb-4">
+              <img
+                src="/src/assets/grassroots-grocery-screenshot.png"
+                alt="Project 3"
+                class="object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mb-2">
+              Grassroots Grocery Event Management Portal
+            </h3>
+            <p class="text-sm text-muted-foreground mb-4">
+              A single-page application built with Vite sitting atop a Node.js
+              backend that queries data out of Airtable. Used by the non-profit
+              organziation Grassroots Grocery to assist in the management and
+              scheduling of their produce packing events.
+            </p>
+          </CardContent>
+          <CardFooter>
+            <div class="flex gap-2">
+              <Button variant="outline">
+                <a
+                  href="https://github.com/grassrootsgrocery/admin-portal/graphs/contributors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Contributions
+                </a>
+              </Button>
+              <Button variant="outline">
+                <a
+                  href="https://github.com/grassrootsgrocery/admin-portal/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </Button>
+            </div>
+          </CardFooter>
+        </Card>
+        <Card className="rounded-md shadow-md w-[29rem]">
+          <CardContent className="p-6">
+            <div class="relative h-40 w-full overflow-hidden rounded-md mb-4">
+              <img
+                src="/src/assets/writing-app-screenshot.png"
+                alt="Project 3"
+                class="object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Writing App</h3>
+            <p class="text-sm text-muted-foreground mb-4">
+              A proof-of-concept for a writing app idea I had. Main features
+              include a directory-like system of text boxes, allowing you to
+              better organize and group your thoughts.
+            </p>
+            <div class="flex gap-2">
+              <Button variant="outline">
+                <a
+                  href="https://github.com/jasoncavanaugh/writing-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </section>
+  </main>
+</div>
