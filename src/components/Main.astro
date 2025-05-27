@@ -4,6 +4,12 @@ import { Button } from "./ui/button";
 import { Card, CardContent, CardFooter } from "./ui/card";
 import { Image } from "astro:assets";
 import profile_pic from "../assets/profile-pic.png";
+import github_png from "../assets/github-mark.png";
+import linkedin_png from "../assets/linkedin.png";
+import basily_png from "../assets/basily-screenshot.png";
+import streakgraph_png from "../assets/streakgraph-screenshot.png";
+import gg_png from "../assets/grassroots-grocery-screenshot.png";
+import wa_png from "../assets/writing-app-screenshot.png";
 ---
 
 <div class="min-h-screen bg-background">
@@ -37,7 +43,6 @@ import profile_pic from "../assets/profile-pic.png";
         <div
           class="relative h-48 w-48 overflow-hidden rounded-full self-start mx-0"
         >
-          <!-- <img src="/src/assets/profile-pic.png" /> -->
           <Image src={profile_pic} alt="" />
         </div>
         <div class="flex flex-col text-left">
@@ -55,7 +60,7 @@ import profile_pic from "../assets/profile-pic.png";
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img class="w-6 h-6" src="/src/assets/github-mark.png" />
+                <Image class="w-6 h-6" src={github_png} alt="" />
                 <span class="sr-only">GitHub</span>
               </a>
             </Button>
@@ -70,7 +75,7 @@ import profile_pic from "../assets/profile-pic.png";
                 size="icon"
                 className="hover:cursor-pointer w-10"
               >
-                <img class="w-7 h-6" src="/src/assets/linkedin.png" />
+                <Image class="w-7 h-6" src={linkedin_png} alt="" />
                 <span class="sr-only">LinkedIn</span>
               </Button>
             </a>
@@ -187,11 +192,7 @@ import profile_pic from "../assets/profile-pic.png";
         <Card className="rounded-md shadow-md w-[28rem]">
           <CardContent className="p-6">
             <div class="relative h-40 w-full overflow-hidden rounded-md mb-4">
-              <img
-                src="/src/assets/basily-screenshot.png"
-                alt="Project 1"
-                class="object-cover"
-              />
+              <Image src={basily_png} alt="" class="object-cover" />
             </div>
             <h3 class="text-xl font-semibold mb-2">Basily</h3>
             <p class="text-sm text-muted-foreground mb-4">
@@ -226,11 +227,7 @@ import profile_pic from "../assets/profile-pic.png";
         <Card className="rounded-md shadow-md w-[29rem]">
           <CardContent className="p-6">
             <div class="relative h-40 w-full overflow-hidden rounded-md mb-4">
-              <img
-                src="/src/assets/streakgraph-screenshot.png"
-                alt="Project 2"
-                class="object-cover"
-              />
+              <Image src={streakgraph_png} alt="" class="object-cover" />
             </div>
             <h3 class="text-xl font-semibold mb-2">Streakgraph</h3>
             <p class="text-sm text-muted-foreground mb-4">
@@ -266,11 +263,7 @@ import profile_pic from "../assets/profile-pic.png";
         <Card className="rounded-md shadow-md w-[29rem]">
           <CardContent className="p-6 pb-0">
             <div class="relative h-40 w-full overflow-hidden rounded-md mb-4">
-              <img
-                src="/src/assets/grassroots-grocery-screenshot.png"
-                alt="Project 3"
-                class="object-cover"
-              />
+              <Image src={gg_png} alt="" class="object-cover" />
             </div>
             <h3 class="text-xl font-semibold mb-2">
               Grassroots Grocery Event Management Portal
@@ -308,11 +301,7 @@ import profile_pic from "../assets/profile-pic.png";
         <Card className="rounded-md shadow-md w-[29rem]">
           <CardContent className="p-6">
             <div class="relative h-40 w-full overflow-hidden rounded-md mb-4">
-              <img
-                src="/src/assets/writing-app-screenshot.png"
-                alt="Project 3"
-                class="object-cover"
-              />
+              <Image src={wa_png} alt="" class="object-cover" />
             </div>
             <h3 class="text-xl font-semibold mb-2">Writing App</h3>
             <p class="text-sm text-muted-foreground mb-4">
